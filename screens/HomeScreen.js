@@ -34,13 +34,14 @@ const HomeScreen = () => {
               fontSize: 18,
             },
           }}
-          onPress={(data, details=null) => {
+          onPress={(data, details = null) => {
             dispatch(
               setOrigin({
                 location: details.geometry.location,
                 description: data.description,
               })
             );
+            
             dispatch(setDestination(null));
           }}
           fetchDetails={true}
