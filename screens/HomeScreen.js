@@ -41,7 +41,7 @@ const HomeScreen = () => {
                 description: data.description,
               })
             );
-            
+
             dispatch(setDestination(null));
           }}
           fetchDetails={true}
